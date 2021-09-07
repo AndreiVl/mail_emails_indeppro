@@ -1,0 +1,46 @@
+mixin header(data)
+	+IE({width: table_width ,align: 'center', valign: 'top'})
+	div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+		<!-- ID:BG SECTION -->
+		table(align="center" bgcolor=data.bg_body border="0" cellpadding="0" cellspacing="0" width="100%" style="border-radius: 5px 5px 0 0; max-width: " + table_width + "px;")
+			tr
+				+td-margin({height: data.margin_top})(class=data.margin_top_class)
+			tr
+				td(align="center" style="padding-left: " + data.body_pading_l + "px; padding-right: " + data.body_pading_r + "px; font-size: 0;")
+					table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+						tr
+							<!-- ID:IMG HEADER -->
+							td(align="left" valign="middle" width="267")
+								+img({
+									link: data.logo_link,
+									img_link: data.logo_img,
+									alt: data.logo_alt,
+									width: data.logo_width,
+									height: data.logo_height
+								})
+							<!-- ID:TXT HEADER -->
+							td(width="10") &nbsp;
+
+							td.lead(align="right" valign="middle")
+								a.link.link--white(href=data.link_url)!=data.link
+			tr
+				+td-margin({height: data.margin_bottom})
+	|!{IE_TABLE_END}
+
+
+//- Вызов
+//- +header({
+//- 	bg_body: '',
+//- 	body_pading_l: '',
+//- 	body_pading_r: '',
+//- 	body_pading_l
+//- 	margin_top:'',
+//- 	margin_bottom:'',
+//- 	logo_link: '',
+//- 	logo_img: '',
+//- 	logo_alt: '',
+//- 	logo_width: '',
+//- 	logo_height: '',
+//- 	link: '',
+//- 	link_url: ''
+//- })

@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+html(lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office")
+	include include/head.pug
+	+head('email-1')
+
+	body()
+		include ../blocks-ui-components/ui-components-mixins.pug			
+		include ../blocks/mixins.pug						
+		<!-- BODY -->
+		table(align="center" bgcolor=bg_table border="0" cellpadding="0" cellspacing="0" width="100%")
+			tr
+				td(align="center" style="padding-left: " + table_pading + "px; padding-right: " + table_pading + "px;")
+					<!-- HEADER -->
+					+header({
+						bg_body: bg_table,
+						body_pading_l: nul_pading_l,
+						body_pading_r: nul_pading_l,
+						margin_top: mr_mediumblue,
+						margin_bottom: mr_mediumblue,
+						logo_link: '#',
+						logo_img: 'img-logo-267-12-01.png',
+						logo_alt: 'INDEPENDENT PROFESSIONALS',
+						logo_width: '267',
+						logo_height: '12',
+						link: '+7&nbsp;495&nbsp;118&nbsp;22&nbsp;13',
+						link_url: '+74951182213'
+					})
+					<!-- HEADER -->
+			tr
+				td(align="center" style="padding-left: " + table_pading + "px; padding-right: " + table_pading + "px;")
+					<!-- TOP STARTS -->
+					+row({
+						col: 1,
+						bg_body: bg_body,
+						border_radius: '10px 10px 0 0',
+						body_pading_l: body_pading_l,
+						body_pading_r: body_pading_r,
+						body_width: body_width,
+						rtl: false,
+						margin_top: mr_green,
+						margin_top_class: false,
+						margin_bottom: mr_green,
+						content: {
+							name: 'top',
+							arg: {
+								title: 'Мы предлагаем провести ux-аудит вашего сайта',
+								img: 'img-top-343-224-01.png',
+								alt: 'Картинка Аудита',
+								width: '343' ,
+								height: '224',
+								text_1: '&mdash;&nbsp;&nbsp;Посетители приходят на&nbsp;сайт, но&nbsp;отваливаются не&nbsp;завершив покупки?',
+								text_2: '&mdash;&nbsp;&nbsp;Не&nbsp;сдвигаются с&nbsp;первого экрана и&nbsp;рано уходят?',
+								text_3: '&mdash;&nbsp;&nbsp;Сайт делали давно и&nbsp;не&nbsp;вы, и&nbsp;так он&nbsp;больше не&nbsp;работает?',
+								text_4: '&mdash;&nbsp;&nbsp;Пользователи не&nbsp;совершают целевых действий?'
+							}
+						}
+					})
+					<!-- TOP ENDS -->
+			tr
+				td(align="center" style="padding-left: " + table_pading + "px; padding-right: " + table_pading + "px;")
+					<!-- GIF STARTS -->
+					+row({
+						col: 1,
+						bg_body: bg_body,
+						body_pading_l: body_pading_l,
+						body_pading_r: body_pading_r,
+						body_width: body_width,
+						rtl: false,
+						margin_top: false,
+						margin_top_class: false,
+						margin_bottom: mr_green,
+						content: {
+							name: 'gif',
+							arg: {
+								lead: 'Знакомая боль? ',
+								title: 'Тогда самое время провести UX-аудит сайта!',
+								img: 'img-gif-320-156.gif',
+								alt: 'Пример Аудита',
+								width: '320' ,
+								height: '156',
+								text: 'Мы&nbsp;поможем выявить слабые места, пользовательские ловушки и&nbsp;запрятанные баги вашего сайта.'
+							}
+						}
+					})
+					<!-- GIF ENDS -->
+			tr
+				td(align="center" style="padding-left: " + table_pading + "px; padding-right: " + table_pading + "px;")
+					<!-- TITLE-VIDEO STARTS -->
+					+row({
+						col: 1,
+						bg_body: bg_body_2,
+						body_pading_l: body_pading_l,
+						body_pading_r: body_pading_r,
+						body_width: body_width,
+						rtl: false,
+						margin_top: mr_green,
+						margin_top_class: false,
+						margin_bottom: mr_green,
+						content: {
+							name: 'title-video',
+							arg: {
+								title: 'Пример аудита &laquo;глазами пользователя&raquo;',
+								img_width: '450',
+								link: '#',
+								img_link: 'img-yutob-video-450-255-01.jpg',
+								alt: 'Видео Ютуба',
+								width: '450',
+								height: '255'
+							}
+						}
+					})
+					<!-- TITLE-VIDEO ENDS -->
+			tr
+				td(align="center" style="padding-left: " + table_pading + "px; padding-right: " + table_pading + "px;")
+					<!-- TITLE STARTS -->
+					+row({
+						col: 1,
+						bg_body: bg_body,
+						body_pading_l: body_pading_l,
+						body_pading_r: body_pading_r,
+						body_width: body_width,
+						rtl: false,
+						margin_top: mr_green,
+						margin_top_class: false,
+						margin_bottom: false,
+						content: {
+							name: 'title-one',
+							arg: {
+								title: 'Аудит арт-директора', 
+								alignment: 'left',
+								margin_title: mr_purpur
+							}
+						}
+					})
+					<!-- TITLE ENDS -->
+			tr
+				td(align="center" style="padding-left: " + table_pading + "px; padding-right: " + table_pading + "px;")
+					<!-- IMG TWO STARTS -->
+					+row({
+						col: 2,
+						bg_body: bg_body,
+						body_pading_l: body_pading_l,
+						body_pading_r: body_pading_r,
+						body_width: col_body_width,
+						rtl: false,
+						margin_top: false,
+						margin_top_class: false,
+						margin_bottom: mr_violet,
+						content: {
+							colWidth: td_2_col_width,
+							colPadding: '10px 10px',
+							valing_right: 'top',
+							valing_left: 'top',
+							col2_left: {
+								name: 'img-wraper',
+								arg: {
+									img: 'img-audit-240-140-01.png',
+									alt: 'Главная страница',
+									width: '240',
+									height: '140'
+								}
+							},
+							col2_right: {
+								name: 'img-wraper',
+								arg: {
+									img: 'img-audit-240-140-02.png',
+									alt: 'Команда',
+									width: '240',
+									height: '140'
+								}
+							}
+						}
+					})
+					<!-- IMG TWO ENDS -->
+			tr
+				td(align="center" style="padding-left: " + table_pading + "px; padding-right: " + table_pading + "px;")
+					<!-- IMG ONE STARTS -->
+					+row({
+						col: 1,
+						bg_body: bg_body,
+						body_pading_l: body_pading_l,
+						body_pading_r: body_pading_r,
+						body_width: body_width,
+						rtl: false,
+						margin_top: false,
+						margin_top_class: false,
+						margin_bottom: mr_mediumblue,
+						content: {
+							name: 'img-wraper',
+								arg: {
+									img: 'img-audit-500-250-01.png',
+									alt: 'Контакты',
+									width: '500',
+									height: '250'
+							}
+						}
+					})
+					<!-- TITIMG ONE ENDS -->
+			tr
+				td(align="center" style="padding-left: " + table_pading + "px; padding-right: " + table_pading + "px;")
+					<!-- BTN STARTS -->
+					+row({
+						col: 1,
+						bg_body: bg_body,
+						body_pading_l: body_pading_l,
+						body_pading_r: body_pading_r,
+						body_width: body_width,
+						rtl: false,
+						margin_top: false,
+						margin_top_class: false,
+						margin_bottom: mr_green,
+						content: {
+							name: 'btn',
+								arg: {
+									link: '#',
+									img: 'btn-img-176-40-01.jpg', 
+									width: '176',
+									height: '40'
+							}
+						}
+					})
+					<!-- BTN ENDS -->
+			tr
+				td(align="center" style="padding-left: " + table_pading + "px; padding-right: " + table_pading + "px;")
+					<!-- TITLE STARTS -->
+					+row({
+						col: 1,
+						bg_body: bg_body,
+						body_pading_l: body_pading_l,
+						body_pading_r: body_pading_r,
+						body_width: body_width,
+						rtl: false,
+						margin_top: false,
+						margin_top_class: false,
+						margin_bottom: mr_lightblue,
+						content: {
+							name: 'title-two',
+							arg: {
+								title: 'Остались вопросы? ',
+								alignment: 'left',
+								subtitle: 'Обратитесь к&nbsp;нашим менеджерам'
+							}
+						}
+					})
+					<!-- TITLE ENDS -->
+			tr
+				td(align="center" style="padding-left: " + table_pading + "px; padding-right: " + table_pading + "px;")
+					<!-- IMG THREE STARTS -->
+					+row({
+						col: 3,
+						bg_body: bg_body,
+						body_pading_l: body_pading_l,
+						body_pading_r: body_pading_r,
+						body_width: col_body_width_3,
+						rtl: false,
+						margin_top: false,
+						margin_top_class: false,
+						margin_bottom: mr_blue,
+						content: {
+							colWidth: td_3_col_width,
+							colPadding: '10px 10px',
+							items: [
+								{	valign: 'top',
+									name: 'user',
+									arg: {
+										name: 'Евгения Рыжова',
+										img: 'img-user-152-182-01.jpg',
+										alt: 'Евгения Рыжова',
+										width: '152',
+										height: '182'
+									}
+								},
+								{	valign: 'top',
+									name: 'user',
+									arg: {
+										name: 'Евгения Рыжова',
+										img: 'img-user-152-182-02.jpg',
+										alt: 'Евгения Рыжова',
+										width: '152',
+										height: '182'
+									}
+								},
+								{	valign: 'top',
+									name: 'user',
+									arg: {
+										name: 'Айлин Самсонова',
+										img: 'img-user-152-182-03.jpg',
+										alt: 'Айлин Самсонов',
+										width: '152',
+										height: '182'
+									}
+								}
+							]
+						}
+					})
+					<!-- IMG THREE ENDS -->
+			tr
+				td(align="center" style="padding-left: " + table_pading + "px; padding-right: " + table_pading + "px;")
+					<!-- FOOTER STARTS -->
+					+row({
+						col: 1,
+						bg_body: bg_body,
+						border_radius: '0 0 10px 10px',
+						body_pading_l: body_pading_l,
+						body_pading_r: body_pading_r,
+						body_width: body_width,
+						rtl: false,
+						margin_top: mr_blue,
+						margin_top_class: 'divider',
+						margin_bottom: mr_green,
+						content: {
+							name: 'footer',
+							arg: {
+
+							}
+						}
+					})
+					<!-- FOOTER ENDS -->
+			tr
+				+td-margin({margin: 'mr-orange'})
+
+		<!-- /BODY -->

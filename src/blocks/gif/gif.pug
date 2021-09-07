@@ -1,0 +1,38 @@
+mixin gif(data)
+	table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0;")
+		tr
+			td.lead(align="center")!=data.lead
+		tr
+			td(align="center")
+				+IE({width: '360' ,align: 'center', valign: 'top'})
+				div(style="display: inline-block; width: 100%; max-width: 360px; vertical-align: top;")
+					table.table-after-div(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+						tr
+							td.h1(align="center")!=data.title
+				|!{IE_TABLE_END}
+		tr
+			+td-margin({margin: 'mr-purpur'})
+		tr
+			td(align="center")
+				+IE({width: '445' ,align: 'center', valign: 'top'})
+				div(style="display: inline-block; width: 100%; max-width: 445px; vertical-align: top;")
+					table.table-after-div(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+						tr
+							td.text(align="center")!=data.text
+				|!{IE_TABLE_END}
+		tr
+			+td-margin({margin: 'mr-mediumblue'})
+		tr
+			td(align="center")
+				+img-wraper(data)
+
+
+//- +gif({
+//- 	lead: '',
+//- 	title: '',
+//- 	text: '',
+//- 	img: '',
+//- 	alt: '',
+//- 	width: '' ,
+//- 	height: '',
+//- })

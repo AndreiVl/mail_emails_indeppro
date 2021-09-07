@@ -1,0 +1,13 @@
+.big-text {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 29px;
+	font-weight: bold;
+	line-height: 38px;
+	color: $color-text;
+	text-decoration: none;
+	mso-line-height-rule: exactly;
+}

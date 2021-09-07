@@ -1,0 +1,17 @@
+mixin user(data)
+	table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0;")
+		tr
+			td(align="center")
+				+img-wraper(data)
+		tr
+			+td-margin({margin: 'mr-violet'})
+		tr
+			td.text.text--sm(align="left")!=data.name
+
+//- +user({
+//- 	name: '',
+//- 	img: '',
+//- 	alt: '',
+//- 	width: '' ,
+//- 	height: ''
+//- })

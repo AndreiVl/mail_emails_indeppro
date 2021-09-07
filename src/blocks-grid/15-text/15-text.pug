@@ -1,0 +1,34 @@
+mixin text(data)
+	table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+		- for (var i = 0; i < data.length; i++)
+			tr
+				if data[i]['type'] === 'text'
+					<!-- ID:TXT -->
+					td(align=data[i]['alignment'] class!=data[i]['class'])!=data[i]['text']
+
+				if data[i]['type'] === 'margin'
+					<!-- ID:MARGIN -->
+					+td-margin({height: data[i]['margin']})
+
+				if data[i]['type'] === 'divider'
+					<!-- ID:MARGIN-DIVIDER -->
+					+td-margin({height: data[i]['margin']})(class="divider")
+
+//- +text({
+//- 	items: [
+//- 		{
+//- 			type: 'text',
+//- 			class: '',
+//- 			text: '',
+//- 			alignment: ''
+//- 		},
+//- 		{
+//- 			type: 'margin',
+//- 			margin: ''
+//- 		},
+//- 		{
+//- 			type: 'divider',
+//- 			margin: ''
+//- 		},
+//- 	]
+//- })

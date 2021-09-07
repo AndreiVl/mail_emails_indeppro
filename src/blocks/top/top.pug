@@ -1,0 +1,44 @@
+mixin top(data)
+	table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0;")
+		tr
+			td(align="center")
+				+IE({width: '400' ,align: 'center', valign: 'top'})
+				div(style="display: inline-block; width: 100%; max-width: 400px; vertical-align: top;")
+					table.table-after-div(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+						tr
+							td.big-text(align="center")!=data.title
+				|!{IE_TABLE_END}
+		tr
+			+td-margin({margin: 'mr-green'})
+		tr
+			td(align="center")
+				+img-wraper(data)
+		tr
+			+td-margin({margin: 'mr-mediumblue'})
+		tr
+			td.text(align="left")!=data.text_1
+		tr
+			+td-margin({margin: 'mr-crayola'})
+		tr
+			td.text(align="left")!=data.text_2
+		tr
+			+td-margin({margin: 'mr-crayola'})
+		tr
+			td.text(align="left")!=data.text_3
+		tr
+			+td-margin({margin: 'mr-crayola'})
+		tr
+			td.text(align="left")!=data.text_4
+
+
+//- +top({
+//- 	title: '',
+//- 	img: '',
+//- 	alt: '',
+//- 	width: '' ,
+//- 	height: '',
+//- 	text_1: '',
+//- 	text_2: '',
+//- 	text_3: '',
+//- 	text_4: '',
+//- })
